@@ -9,7 +9,7 @@ namespace PadariaCarmel
 {
     class Conectar
     {
-        private static string connstring = "server=localhost;port=3306;database=dbpadariacarmel;Uid=senac;pwd=Locaweb@102030;";
+        private static string connstring = "server=localhost;port=3306;database=dbpadariacarmel;Uid=senac;pwd=Locaweb@102030";
         private static MySqlConnection conn = null;
         public static MySqlConnection obterConexao()
         {
