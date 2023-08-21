@@ -107,10 +107,13 @@ namespace PadariaCarmel
 
             MySqlDataReader DR;
             DR = comm.ExecuteReader();
-            DR.Read();
 
-            lstPesquisar.Items.Add(DR.GetString(0));
+            lstPesquisar.Items.Clear();
 
+            while (DR.Read())
+            {
+                lstPesquisar.Items.Add(DR.GetString(0));
+            }
             Conectar.fecharConexao();
         }
     }
