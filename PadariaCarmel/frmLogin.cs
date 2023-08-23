@@ -100,6 +100,8 @@ namespace PadariaCarmel
 
             comm.Connection = Conectar.obterConexao();
             MySqlDataReader DR;
+    
+            
             DR = comm.ExecuteReader();
 
             bool resultado = DR.HasRows;

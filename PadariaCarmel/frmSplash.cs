@@ -31,7 +31,7 @@ namespace PadariaCarmel
         {
             if (pgbCarregando.Value < 100)
             {
-                pgbCarregando.Value = pgbCarregando.Value + 2;
+                pgbCarregando.Value = pgbCarregando.Value + 25;
                 lblCarregando.Text = pgbCarregando.Value.ToString();
             }
             else
@@ -49,5 +49,6 @@ namespace PadariaCarmel
             int MenuCount = GetMenuItemCount(hMenu) - 1;
             RemoveMenu(hMenu, MenuCount, MF_BYCOMMAND);
         }
+
     }
 }
